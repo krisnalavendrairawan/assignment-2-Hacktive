@@ -16,8 +16,6 @@ class TeachersController {
             }
         })
     }
-    
-
 }
 
 module.exports = {

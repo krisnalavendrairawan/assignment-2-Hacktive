@@ -1,5 +1,5 @@
-const fs = require('fs');
 const { generateToken } = require('../helpers/jwt');
+const fs = require('fs');
 class UsersController {
     static login (req, res) {
         fs.readFile('./data/users.json', 'utf8', (err, data) => {
@@ -30,7 +30,7 @@ class UsersController {
                     }
                 } else {
                     res.status(400).json({
-                        message: 'wrong email'
+                        message: 'wrong username'
                     })
                 }
             }

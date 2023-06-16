@@ -1,9 +1,7 @@
 const router = require('express').Router();
-const { TeachersController } = require('../controllers/TeachersController');
+const { TeachersController } = require('../controllers/TeacherController');
 const { UsersController } = require('../controllers/UsersController');
 const { authentication } = require('../middlewares/authentication');
-
-
 
 
 router.post('/login', UsersController.login);
